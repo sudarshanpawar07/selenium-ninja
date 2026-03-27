@@ -15,18 +15,18 @@ public class DirectLocators {
 		driver.navigate().to("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
 		// find the element
-		//WebElement searchfield = driver.findElement(By.tagName("input"));
+		// WebElement searchfield = driver.findElement(By.tagName("input"));
 		// perform action on the webElement
 //		searchfield.sendKeys("Laptop");
 //		Thread.sleep(2000);
-		
+
 		WebElement searchfieldById = driver.findElement(By.id("small-searchterms"));
 		searchfieldById.sendKeys("Mobile");
-		
-		
+
 		Thread.sleep(2000);
 		WebElement register = driver.findElement(By.className("ico-register"));
 		register.click();
+		Thread.sleep(2000);
 		// close the browser
 		driver.close();
 
