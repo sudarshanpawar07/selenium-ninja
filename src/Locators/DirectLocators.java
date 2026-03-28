@@ -20,12 +20,26 @@ public class DirectLocators {
 //		searchfield.sendKeys("Laptop");
 //		Thread.sleep(2000);
 
-		WebElement searchfieldById = driver.findElement(By.id("small-searchterms"));
-		searchfieldById.sendKeys("Mobile");
+//		WebElement searchfieldById = driver.findElement(By.id("small-searchterms"));
+//		searchfieldById.sendKeys("Laptop");
 
-		Thread.sleep(2000);
-		WebElement register = driver.findElement(By.className("ico-register"));
-		register.click();
+//		Thread.sleep(2000);
+//		WebElement register = driver.findElement(By.className("ico-register"));
+//		register.click();
+//		WebElement searchbtn = driver.findElement(By.className("button-1"));
+//		searchbtn.click();
+//		Thread.sleep(2000);
+
+//		driver.findElement(By.name("q")).sendKeys("chocolate");
+//		Thread.sleep(2000);
+		// id Locator
+//		driver.findElement(By.id("small-searchterms")).sendKeys("unique");
+//		Thread.sleep(2000);
+//		linkText Locator
+//		driver.findElement(By.linkText("Register")).click();
+//		Thread.sleep(2000);
+//		paritallyLinkText
+		driver.findElement(By.partialLinkText("Shopping ")).click();
 		Thread.sleep(2000);
 		// close the browser
 		driver.close();
