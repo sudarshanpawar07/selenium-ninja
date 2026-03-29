@@ -26,17 +26,17 @@ public class RegisterModule {
 		driver.findElement(By.id("LastName")).sendKeys("Pawar");
 		Thread.sleep(2000);
 		// enter into Email textfield webelement
-		driver.findElement(By.id("Email")).sendKeys("sudarshanpawar0007@gmail.com");
+		driver.findElement(By.id("Email")).sendKeys("sudarshanpawar04@gmail.com");
 		Thread.sleep(2000);
 		// enter into Password textfield webelement
-		driver.findElement(By.id("Password")).sendKeys("Sudarshan@123");
+		driver.findElement(By.id("Password")).sendKeys("Sudarshan@1234");
 		Thread.sleep(2000);
 		// enter into ConfirmPassword textfield webelement
-		driver.findElement(By.id("ConfirmPassword")).sendKeys("Sudarshan@123");
+		driver.findElement(By.id("ConfirmPassword")).sendKeys("Sudarshan@1234");
 		Thread.sleep(2000);
 		// click on the Register Button webelement
 		driver.findElement(By.name("register-button")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.close();
 
 	}

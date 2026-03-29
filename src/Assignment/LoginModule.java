@@ -19,11 +19,11 @@ class LoginModule {
 		driver.findElement(By.className("ico-login")).click();
 
 		// enter into the email text web element
-		driver.findElement(By.className("email")).sendKeys("sudarshanpawar0007@gmail.com");
+		driver.findElement(By.className("email")).sendKeys("sudarshanpawar04@gmail.com");
 		Thread.sleep(2000);
 
 		// enter into the password text webElement
-		driver.findElement(By.name("Password")).sendKeys("Sudarshan@123");
+		driver.findElement(By.name("Password")).sendKeys("Sudarshan@1234");
 		Thread.sleep(2000);
 
 		// click on the remember me checkbox web element
@@ -33,7 +33,7 @@ class LoginModule {
 		// click on the login button
 		driver.findElement(By.className("login-button")).click();
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		driver.close();
 
