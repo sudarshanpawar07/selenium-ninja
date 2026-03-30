@@ -20,10 +20,10 @@ public class TutorialsNinjaLoginModule {
 		driver.findElement(By.linkText("Login")).click();
 		Thread.sleep(2000);
 		// enter data into email textfield webelement
-		driver.findElement(By.name("email")).sendKeys("sudarshanpawar7171@gmail.com");
+		driver.findElement(By.name("email")).sendKeys("shivpratapkashid02@gmail.com");
 		Thread.sleep(2000);
 		// enter data into password textfield webelement
-		driver.findElement(By.id("input-password")).sendKeys("Sudarshan@123");
+		driver.findElement(By.id("input-password")).sendKeys("Shivpratap@123");
 		Thread.sleep(2000);
 
 		// click on the login button

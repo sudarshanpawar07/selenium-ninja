@@ -19,7 +19,7 @@ class LoginModule {
 		driver.findElement(By.className("ico-login")).click();
 
 		// enter into the email text web element
-		driver.findElement(By.className("email")).sendKeys("sudarshanpawar04@gmail.com");
+		driver.findElement(By.className("email")).sendKeys("sudarshanpawar05@gmail.com");
 		Thread.sleep(2000);
 
 		// enter into the password text webElement

@@ -18,12 +18,12 @@ public class TutorialsNinjaRegisterModule {
 
 		// click on the register
 		driver.findElement(By.linkText("Register")).click();
-
+		
 		driver.findElement(By.id("input-firstname")).sendKeys("shivpratap");
 
 		driver.findElement(By.id("input-lastname")).sendKeys("Kashid");
 
-		driver.findElement(By.id("input-email")).sendKeys("shivpratapkashid01@gmail.com");
+		driver.findElement(By.id("input-email")).sendKeys("shivpratapkashid02@gmail.com");
 
 		driver.findElement(By.id("input-telephone")).sendKeys("8765238956");
 

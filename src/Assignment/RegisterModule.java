@@ -19,14 +19,14 @@ public class RegisterModule {
 		// select the gender radio webelement
 		driver.findElement(By.id("gender-male")).click();
 		Thread.sleep(2000);
-		// enter into firstName textfield webelement
+		// enter into firstName textfield webelement 
 		driver.findElement(By.id("FirstName")).sendKeys("Sudarshan");
 		Thread.sleep(2000);
 		// enter into LastName textfield webelement
 		driver.findElement(By.id("LastName")).sendKeys("Pawar");
 		Thread.sleep(2000);
 		// enter into Email textfield webelement
-		driver.findElement(By.id("Email")).sendKeys("sudarshanpawar04@gmail.com");
+		driver.findElement(By.id("Email")).sendKeys("sudarshanpawar05@gmail.com");
 		Thread.sleep(2000);
 		// enter into Password textfield webelement
 		driver.findElement(By.id("Password")).sendKeys("Sudarshan@1234");
