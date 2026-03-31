@@ -13,7 +13,7 @@ public class CommunityPollRadioLocators {
 
 		// enter into a webpage
 		driver.get("https://demowebshop.tricentis.com/");
-		
+
 		driver.findElement(By.id("pollanswers-1")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.id("pollanswers-2")).click();

@@ -37,7 +37,7 @@ public class GiftCardUsingLocators {
 		driver.findElement(By.id("giftcard_2_RecipientName")).sendKeys("Tejas Dhole");
 		Thread.sleep(2000);
 		driver.findElement(By.id("giftcard_2_RecipientEmail")).sendKeys("tejasdhole05@gmail.com");
-		driver.findElement(By.id("giftcard_2_Message")).sendKeys("Happy Birthaday");
+		driver.findElement(By.id("giftcard_2_Message")).sendKeys("Happy Birthday");
 		Thread.sleep(2000);
 		WebElement ele = driver.findElement(By.id("addtocart_2_EnteredQuantity"));
 		ele.clear();
