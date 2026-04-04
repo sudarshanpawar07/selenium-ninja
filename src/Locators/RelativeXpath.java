@@ -30,6 +30,7 @@ public class RelativeXpath {
 		// xpath by tagname
 		driver.findElement(By.xpath("//input")).sendKeys("Laptop");
 		Thread.sleep(2000);
+		// Xpath By Attribute
 		driver.findElement(By.xpath("//input[@value='Search']")).click();
 		Thread.sleep(2000);
 
