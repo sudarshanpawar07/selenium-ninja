@@ -15,10 +15,24 @@ public class RelativeXpath {
 		driver.navigate().to("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
 
-		WebElement gift = driver.findElement(By.xpath("//input[@value='Add to cart']"));
+		// xpath by attribute using click on addtocart gift25
+		WebElement gift = driver.findElement(By.xpath("//input[@value ='Add to cart']"));
 		gift.click();
 		Thread.sleep(2000);
-		
+
+		// xpath by text function using click on register
+		driver.findElement(By.xpath("//a[text() = 'Register']")).click();
+
+		// xpath by contains function using click on login
+		driver.findElement(By.xpath("//a[contains(@class,'ico-login')]")).click();
+		Thread.sleep(2000);
+
+		// xpath by tagname
+		driver.findElement(By.xpath("//input")).sendKeys("Laptop");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@value='Search']")).click();
+		Thread.sleep(2000);
+
 		driver.close();
 
 	}
