@@ -17,7 +17,6 @@ public class DuplicateElementsOfArray {
 					cnt++;
 					track[j] = true;
 				}
-
 				
 			}
 			if (cnt > 1) {
