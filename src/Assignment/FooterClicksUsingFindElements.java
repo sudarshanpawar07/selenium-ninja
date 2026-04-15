@@ -17,26 +17,39 @@ public class FooterClicksUsingFindElements {
 		Thread.sleep(2000);
 
 		// find all elements
-		List<WebElement> follow = driver.findElements(
-				By.xpath("//div[@class='column follow-us']/ul/li/a"));
+		List<WebElement> follow = driver.findElements(By.xpath("//div[@class='column follow-us']/ul/li/a"));
 
-		// store URL
-		List<String> urls = new ArrayList<>();
+//		// store URL
+//		List<String> urls = new ArrayList<>();
+//
+//		for (WebElement e : follow) {
+//			urls.add(e.getAttribute("href"));
+//		}
+//
+//		// navigate using get()
+//		for (String url : urls) {
+//
+//			driver.get(url);   
+//			Thread.sleep(2000);
+//
+//			driver.navigate().back();
+//			Thread.sleep(2000);
+//		}
 
-		for (WebElement e : follow) {
-			urls.add(e.getAttribute("href"));
-		}
+		// second approach
+		for (WebElement webElement : follow) {
 
-		// navigate using get()
-		for (String url : urls) {
+			String text = webElement.getText();
 
-			driver.get(url);   
+			webElement.click();
 			Thread.sleep(2000);
 
-			driver.navigate().back();
-			Thread.sleep(2000);
+			if (text.equals("RSS")) {
+				driver.navigate().back();
+				Thread.sleep(2000);
+			}
 		}
-
+		Thread.sleep(2000);
 		driver.quit();
 	}
 }
