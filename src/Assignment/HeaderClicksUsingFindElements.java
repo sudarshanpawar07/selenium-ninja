@@ -15,10 +15,10 @@ public class HeaderClicksUsingFindElements {
 
 		driver.get("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
-//"//div[@class = 'header-links']/ul/li/a"
+		//"//div[@class = 'header-links']/ul/li/a"
 		List<WebElement> headerClick = driver.findElements(By.xpath("//div[@class = 'header-links']/ul/li/a"));
 
-//		System.out.println(headerClick);
+		//	System.out.println(headerClick);
 		for (WebElement webEle : headerClick) {
 			webEle.click();
 			Thread.sleep(2000);
