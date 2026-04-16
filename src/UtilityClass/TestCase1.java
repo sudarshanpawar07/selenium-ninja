@@ -10,7 +10,7 @@ public class TestCase1 extends Base {
 		login();
 		Thread.sleep(2000);
 		driver.findElement(By.name("q")).sendKeys("Mouse");
-		driver.findElement(By.cssSelector("//input[@value = 'Search']")).click();
+		driver.findElement(By.xpath("//input[@value='Search']")).click();
 		logOut();
 		Thread.sleep(2000);
 		postCondition();

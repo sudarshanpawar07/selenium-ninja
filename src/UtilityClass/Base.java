@@ -1,13 +1,34 @@
 package UtilityClass;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class Base {
-	public static ChromeDriver driver = null;
+	public static WebDriver driver = null;
 
 	public static void preCondition() {
-		driver = new ChromeDriver();
+		String browser = "firefox";
+
+		if (browser.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		} 
+		else if (browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		}
+		else if (browser.equalsIgnoreCase("safari")) {
+			driver = new SafariDriver();
+		}
+		else if (browser.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		}
+		else {
+			driver = new ChromeDriver();
+		}
+
 		driver.manage().window().maximize();
 
 		driver.get("https://demowebshop.tricentis.com/");
