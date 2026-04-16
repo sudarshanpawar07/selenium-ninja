@@ -34,6 +34,7 @@ class RemoveHighestPriceProduct extends Base {
 			if (currentPrice > maxPrice) {
 				maxPrice = currentPrice;
 				maxIndex = i;
+
 			}
 		}
 
