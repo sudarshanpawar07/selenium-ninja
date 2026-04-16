@@ -7,9 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FunctionalTesting extends Base {
-	
-	public static void testCase1() throws InterruptedException
-	{
+
+	public static void testCase1() throws InterruptedException {
 		System.out.println("TestCase 1");
 		preCondition();
 		Thread.sleep(2000);
@@ -22,10 +21,10 @@ public class FunctionalTesting extends Base {
 		postCondition();
 		Thread.sleep(2000);
 	}
-	public static void testCase2() throws InterruptedException
-	{
+
+	public static void testCase2() throws InterruptedException {
 		System.out.println("TestCase 2");
-		
+
 		preCondition();
 		Thread.sleep(2000);
 		login();
@@ -52,8 +51,7 @@ public class FunctionalTesting extends Base {
 		Thread.sleep(2000);
 	}
 
-	public static void testCase3() throws InterruptedException
-	{
+	public static void testCase3() throws InterruptedException {
 		System.out.println("TestCase 3");
 		preCondition();
 		Thread.sleep(2000);
@@ -95,8 +93,8 @@ public class FunctionalTesting extends Base {
 		logOut();
 		postCondition();
 	}
-	public static void testCase4() throws InterruptedException
-	{
+
+	public static void testCase4() throws InterruptedException {
 		System.out.println("TestCase 4");
 //		ChromeDriver driver = new ChromeDriver();
 //		driver.manage().window().maximize();
@@ -142,8 +140,8 @@ public class FunctionalTesting extends Base {
 //		driver.quit();
 		postCondition();
 	}
-	public static void testCase5() throws InterruptedException
-	{
+
+	public static void testCase5() throws InterruptedException {
 		System.out.println("TestCase 5");
 		preCondition();
 		Thread.sleep(2000);
@@ -155,7 +153,6 @@ public class FunctionalTesting extends Base {
 		Thread.sleep(2000);
 		postCondition();
 		Thread.sleep(2000);
-		
 	}
-	
+
 }

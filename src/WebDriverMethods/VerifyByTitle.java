@@ -3,19 +3,19 @@ package WebDriverMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class VrifyByUrl {
+public class VerifyByTitle {
 	public static void main(String[] args) throws Exception {
-		String expected_url = "https://demowebshop.tricentis.com/";
+		String expected_title = "Demo Web Shop";
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(expected_url);
+		driver.get("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
-		String actual_result = driver.getCurrentUrl();
-		if (actual_result.equals(expected_url)) {
-			System.out.println("I am in dws Homepage");
+		String actual_title = driver.getTitle();
+		if (actual_title.equals(expected_title)) {
+			System.out.println("Title of webpage is correct");
 		} else {
 			driver.close();
-			throw new Exception("I am not in dws Homapage");
+			throw new Exception("Title of WebPage is not correct");
 		}
 
 		driver.close();
