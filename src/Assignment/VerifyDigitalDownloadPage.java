@@ -22,6 +22,7 @@ public class VerifyDigitalDownloadPage {
 			 System.out.println("i am in digital download page");
 			 WebElement sortBy = driver.findElement(By.id("products-orderby"));
 			 Select sel = new Select(sortBy);
+			 
 			 List<WebElement> options = sel.getOptions();
 			 int i= 0;
 			 for (WebElement web : options) {
