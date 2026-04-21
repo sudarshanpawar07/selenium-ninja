@@ -41,6 +41,7 @@ public class CountOfDragDropElement {
 			}
 
 		}
+		Thread.sleep(2000);
 		System.out.println("Angular : " + angular + ", : Mongo : " + mongo + ", Node : " + node);
 		driver.close();
 	}
