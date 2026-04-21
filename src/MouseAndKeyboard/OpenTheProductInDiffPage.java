@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class SentValuesByKeyboard {
+public class OpenTheProductInDiffPage {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 
@@ -15,22 +15,11 @@ public class SentValuesByKeyboard {
 		driver.get("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
 		Actions act = new Actions(driver);
-//		WebElement searchField = driver.findElement(By.id("small-searchterms"));
-//		act.sendKeys(searchField, "Computer").perform();
-//		Thread.sleep(3000);
-//		act.keyDown(Keys.ARROW_DOWN).keyDown(Keys.ARROW_DOWN).keyDown(Keys.ENTER).perform();
-//		Thread.sleep(2000);
-		// another way
-		for(int i = 0; i < 6;i++)
-		{
-			act.keyDown(Keys.TAB).perform();
-			Thread.sleep(1000);
-		}
-		act.sendKeys("Computer").perform();
+		WebElement books = driver.findElement(By.xpath("//a[contains(text(),'Books')]"));
+		act.keyDown(Keys.CONTROL).click(books).perform();
 		Thread.sleep(2000);
-		act.keyDown(Keys.ENTER).perform();
-		
-		driver.close();
+		driver.quit();
+
 	}
 
 }

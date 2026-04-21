@@ -13,11 +13,13 @@ public class ScrollByKeyBorad {
 		driver.get("https://demowebshop.tricentis.com/");
 		Thread.sleep(2000);
 		Actions act = new Actions(driver);
-		act.keyDown(Keys.PAGE_DOWN).perform();
+//		act.keyDown(Keys.PAGE_DOWN).perform();
+//		Thread.sleep(2000);
+//		act.keyDown(Keys.PAGE_UP).perform();
+//		Thread.sleep(2000);
+		// using space key
+		act.keyDown(Keys.SPACE).keyDown(Keys.SPACE).perform();
 		Thread.sleep(2000);
-		act.keyDown(Keys.PAGE_UP).perform();
-		Thread.sleep(2000);
-
 		driver.close();
 	}
 
