@@ -36,12 +36,12 @@ public class CountOfDragDropElement {
 				angular++;
 			} else if (ele.getAttribute("id").equals("mongo")) {
 				mongo++;
-			} else {
+			} else if (ele.getAttribute("id").equals("node")) {
 				node++;
 			}
 
 		}
-		System.out.println("Angular  : " + angular + ", : Mongo : " + mongo + ", Node : " + node);
+		System.out.println("Angular : " + angular + ", : Mongo : " + mongo + ", Node : " + node);
 		driver.close();
 	}
 
