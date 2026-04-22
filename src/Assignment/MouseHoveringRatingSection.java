@@ -22,9 +22,13 @@ public class MouseHoveringRatingSection {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Ratings']")).click();
 		Thread.sleep(2000);
-		WebElement star5 = driver.findElement(By.xpath("//input[@value='5']/following-sibling::*[local-name()='svg']"));
+		
+//		WebElement star5 = driver.findElement(By.xpath("//input[@value='5']/following-sibling::*[local-name()='svg']"));
+//
+//		act.moveToElement(star5).perform();
+		
+		driver.findElement(By.xpath("//div[@class='flex justify-center pt-2']")).click();
 
-		act.moveToElement(star5).perform();
 		driver.findElement(By.xpath("//textarea[@placeholder='Description']")).sendKeys("Nice Product");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[text() = 'Submit']")).click();
