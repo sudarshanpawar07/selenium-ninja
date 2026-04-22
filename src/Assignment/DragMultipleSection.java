@@ -25,17 +25,11 @@ public class DragMultipleSection {
 		
 		WebElement mobileCharger = driver.findElement(By.xpath("//div[text()='Mobile Charger']"));
 		WebElement mobileCover = driver.findElement(By.xpath("//div[text()='Mobile Cover']"));
-		
 		WebElement mobileTarget = driver.findElement(By.xpath("//div[text()='Mobile Accessories']"));
-		//act.dragAndDrop(mobileCharger, mobileTarget).perform();
-		act.clickAndHold(mobileCharger).moveToElement(mobileTarget).release().perform();
+		
+		act.click(mobileCover).click(mobileCharger).perform();
 		Thread.sleep(1000);
-//		mobileCover = driver.findElement(By.xpath("//div[text()='Mobile Cover']"));
-//		mobileTarget = driver.findElement(By.xpath("//div[text()='Mobile Accessories']"));
-
-		act.clickAndHold(mobileCover).moveToElement(mobileTarget).release().perform();
-		Thread.sleep(1000);
-		// complete this task 
+	
 	}
 
 }
