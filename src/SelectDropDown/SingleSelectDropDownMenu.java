@@ -15,23 +15,25 @@ public class SingleSelectDropDownMenu{
 		Thread.sleep(2000);
 		WebElement multiSelect = driver.findElement(By.id("multiple_cars"));
 		Select sel = new Select(multiSelect);
-		sel.selectByVisibleText("Audi");
-		Thread.sleep(2000);
-		sel.selectByValue("bmw");
-		Thread.sleep(2000);
-		sel.selectByIndex(3);
-		Thread.sleep(3000);
-		
+//		sel.selectByVisibleText("Audi");
+//		Thread.sleep(2000);
+//		sel.selectByValue("bmw");
+//		Thread.sleep(2000);
+//		sel.selectByIndex(3);
+//		Thread.sleep(3000);
+//		
 
 		/* Deselect methods */
 		
-		sel.deselectByVisibleText("Audi");
-		Thread.sleep(1000);
-		sel.deselectByValue("bmw");
-		Thread.sleep(1000);
-		sel.deselectByIndex(3);
-		Thread.sleep(5000);
+		sel.deselectAll();
 		
+//		sel.deselectByVisibleText("Audi");
+//		Thread.sleep(1000);
+//		sel.deselectByValue("bmw");
+//		Thread.sleep(1000);
+//		sel.deselectByIndex(3);
+//		Thread.sleep(5000);
+//		
 
 		driver.close();
 
