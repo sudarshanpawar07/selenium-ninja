@@ -152,7 +152,7 @@ public class FunctionalTesting extends Base {
 		logOut();
 		Thread.sleep(2000);
 		postCondition();
-		Thread.sleep(2000);
+		Thread.sleep(2000); 
 	}
 
 }
